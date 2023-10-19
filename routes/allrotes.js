@@ -85,6 +85,10 @@ router.get('/OrderItemsTable', async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
+router.get('/regdoll', async (req, res) => {
+  res.send(`<iframe style="width: -webkit-fill-available;height: -webkit-fill-available;"  src="https://games.crazygames.com/en_US/crazy-roll-3d/index.html" title="Crazy Roll 3D" scrolling="no" allow="autoplay; payment; fullscreen; microphone; focus-without-user-activation *; screen-wake-lock; gamepad; clipboard-read; clipboard-write; " allowfullscreen="" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-scripts allow-same-origin allow-downloads allow-popups" loading="eager" data-hj-allow-iframe="true" class="css-ab5nf2">Crazy Roll 3D is an addicting avoid game. Check it out here in your browser. It is available as an unblocked game. It features details on keyboard and mouse controls to make it easier to play. That way, it is easy to see how to play Crazy Roll 3D. The game is made with WebGL to work in all modern browsers. If you like the game, you should also play our other avoid games or <a href='https://www.crazygames.com/game/jet-rush' target='_blank'>Jet Rush</a> and <a href='https://www.crazygames.com/game/helix-jump' target='_blank'>Helix Jump</a>.</iframe>`)
+ 
+});
 
 // Create a new order item
 router.post('/OrderItemsTable', async (req, res) => {
@@ -98,4 +102,5 @@ router.post('/OrderItemsTable', async (req, res) => {
     res.status(400).json({ message: error.message });
   }
 });
+
 module.exports = router;
