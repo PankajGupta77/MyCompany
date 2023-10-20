@@ -103,4 +103,8 @@ router.post('/OrderItemsTable', async (req, res) => {
   }
 });
 
+router.get('/pankaj',(req, res) => {
+  res.send("pankaj")
+})
+
 module.exports = router;
