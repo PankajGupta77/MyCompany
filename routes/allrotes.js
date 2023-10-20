@@ -104,7 +104,7 @@ router.post('/OrderItemsTable', async (req, res) => {
 });
 
 router.get('/pankaj',(req, res) => {
-  res.send("pankaj")
+res.send(`<iframe id="game-iframe" style="width: -webkit-fill-available;height: -webkit-fill-available;" id="game" src="https://html5.gamedistribution.com/rvvASMiM/5b0abd4c0faa4f5eb190a9a16d5a1b4c" title="Sky Riders" scrolling="no" allow="autoplay; payment; fullscreen; microphone; focus-without-user-activation *; screen-wake-lock; gamepad; clipboard-read; clipboard-write; " allowfullscreen="" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-scripts allow-same-origin allow-downloads allow-popups" loading="eager" data-hj-allow-iframe="true" class="css-ab5nf2">This is an amusing racing game. Play it here on CrazyGames.com in your browser. You will find this game unblocked. This page includes a detailed controls section to make it easier to play. That way, you can see how to play the game. Stand By Games created Sky Riders. This awesome driving game is powered by WebGL technology to work in all modern browsers. If you liked this game, make sure to also try our other <a href='https://www.crazygames.com/t/racing' target='_blank'>racing games</a> or <a href='https://www.crazygames.com/game/turbo-stars---rival-racing' target='_blank'>Turbo Stars - Rival Racing</a> and <a href='https://www.crazygames.com/game/crazy-for-speed' target='_blank'>Crazy for Speed</a>.</iframe>`)
 })
 
 module.exports = router;
